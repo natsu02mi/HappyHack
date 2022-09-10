@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url(fonts/);
+}
+
+h2,h3,p,a,footer{
+    font-family: 'Futura';
+}
+
+.firstview{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background1.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+nav :hover{
+    color: #3D5CDB;
+
+}
+
+.fadein{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  
+}
+h1 img{
+    width: 900px;
+}
+
+header p{
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    color: #3D5CDB;
+    padding: 40px;
+}
+
+.active{
+    opacity: 1;
+    top: 0;
+}
+
+.intro1,.intro2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Introduction{
+    margin-bottom: 40px;
+}
+.intro-text{
+    width: 500px;
+    margin: 20px;
+}
+.intro-text p{
+    padding: 0px 50px 10px;
+    line-height: 30px;
+}
+.intro img{
+    width: 480px;
+    margin: 20px;
+}
+
+.intro a:hover{
+    box-shadow: 0 2px 15px 2px  rgba(0, 0, 0, 0.2);
+}
+
+.intro-text a{
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 15px;
+    text-align: center;  
+    line-height: 40px;
+    font-size: 15pt;
+    font-weight: bold; 
+}
+
+#Courses {
+    background-color: #D6E5F9;
+    position: relative;
+    text-align: center;
+}
+
+canvas{
+    position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.course-contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10vw;
+    padding-bottom: 40px;
+}
+
+.course-content{
+    background-color: #fff;
+    margin: 10px;
+    text-align: center;
+    width: 240px;
+    height: 340px;  
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.course-content h3{
+    font-size: 15px;
+    color: #183c61;
+    margin: 20px 0;
+}
+
+.course-content img {
+    height: 90px;
+    margin: 50px 0 20px;
+}
+
+.course-content a{
+    display: block;
+    background-color: #3D5CDB;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 15px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 25px 35px 45px;
+}
+
+.course-content a:hover{
+    box-shadow: 0 2px 15px 2px  rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    margin: 0 auto;
+    width: 80%;
+} 
+
+#Images img{
+    width: 100%;
+}
+
+.access-map{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer {
+    color: #3959d9;
+    text-align: center;
+    padding: 20px;
+}
+@media(max-width:450px){
+    .title p{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    
+    nav{
+        display: none;
+
+    }
+    .firstview {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    h1 img {
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro1{
+        flex-direction: column;
+    }
+    
+    .intro2 {
+        flex-direction: column-reverse;
+    }
+
+    .intro img,.intro-text {
+        min-width: 0px;
+        width: 90vw;
+        margin: 18px;
+        font-size: 13px;
+
+    }
+    .intro-text p{
+        padding: 0px 20px 50px;
+    }
+    .intro a{
+        font-size: 15px;
+    }
+
+    .course-contents{
+        padding: 0px 0px 0px;
+    }
+    .course-content{
+        width: 140px;
+        height: 200px;
+        padding: 10px;
+    }
+    .course-content img{
+        height: 80px;
+        margin: 10px 0px 0px;
+    }
+    h3{
+        font-size: 12px;
+        margin: 15px 0px 0px;
+    }
+    .course-content a{
+        margin: 0px 0px 10px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    iframe{
+        height: 400px;
+    }
+    iframe{
+        width: 100vw;
+        height: 300px;
+        margin: 10px 0px 20px;
+    }    
+}
